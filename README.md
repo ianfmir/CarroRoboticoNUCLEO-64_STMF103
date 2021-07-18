@@ -4,6 +4,6 @@ This is a 3-6V DC motor API for a [NUCLEO-F103RB](https://www.st.com/en/evaluati
 
 This API was developed as an assignment for the discipline of Embedded Systems Programming at Federal University of Minas Gerais in July 2021. The classes were taught by professor Ricardo de Oliveira Duarte and the authors are Bruno Guimarães Bitencourt and Ian Fernandes Miranda.
 
-*Attention*: This library was developed for the LCD shield connected to the NUCLEO-64 Arduino connectors. When using the same devices specified above, the corresponding ports and pins are defined by default. When using a different board or shield, it is mandatory to initialize the respective ports and pins for each device with the appropriate funcion
+**Attention**: This library was developed to control only the DC motors, if you need to implement a full functional aoutonomous vehicle it's necessary to include the environment sensoring. When using a different board, it is mandatory to initialize the respective ports and pins for each device with the appropriate funcion.
 
 [brunogbitencourt@ufmg.br](mailto:brunogbitencourt@ufmg.br), [ianfm@ufmg.br](mailto:ianfm@ufmg.br)
