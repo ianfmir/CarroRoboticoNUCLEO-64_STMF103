@@ -1,11 +1,11 @@
 # CarroRoboticoNUCLEO-64_STMF103
 
-This is a 3-6V DC motor API for a [NUCLEO-F103RB](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html) board. This API controls two 3-6V DC motors in order to make possible the control and navigation of an autonomous car.
+This is a 3-6V DC motor API for a [NUCLEO-F103RB](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html) board. It manipulates two 3-6V DC motors in order to control and navigate an autonomous vehicle.
 
-This API was developed as an assignment for the discipline of Embedded Systems Programming at Federal University of Minas Gerais in July 2021. The classes were taught by professor Ricardo de Oliveira Duarte and the authors are Bruno Guimarães Bitencourt and Ian Fernandes Miranda.
+This API was developed in July 2021 by Bruno Guimarães Bitencourt and Ian Fernandes Miranda as an assignment for the discipline of Embedded Systems Programming at the Federal University of Minas Gerais (UFMG). The classes were taught by professor Ricardo de Oliveira Duarte.
 
-The developed library is inside the folder library and inside the folder example is on example code that uses the functions implemented on the library to execute one square path using one vehicle with two wheels. 
+The developed library is located inside the folder entitled as "library". Inside the folder entitled "example" there's an example code that uses the functions implemented on the library to make a two wheeled vehicle perform a squared path on the ground. 
 
-**Attention**: This library was developed to control only the DC motors, if you need to implement a full functional aoutonomous vehicle it's necessary to include the environment sensoring. When using a different board, it is mandatory to initialize the respective ports and pins for each device with the appropriate funcion.
+**Attention**: This library was developed to control only the described DC motors. If your goal is to implement a full functional aoutonomous vehicle it's necessary to include the environment sensoring. When using a different board, it is mandatory to initialize the respective ports and pins for each device with the appropriate functions.
 
 [brunogbitencourt@ufmg.br](mailto:brunogbitencourt@ufmg.br), [ianfm@ufmg.br](mailto:ianfm@ufmg.br)
