@@ -3,6 +3,8 @@
   ******************************************************************************
   * @file           : main.c
   * @brief          : Main program body
+  *  Created on: 18 de jul de 2021
+  *      Authors: Bruno Guimarães Bitencourt and Ian Fernandes Miranda
   ******************************************************************************
   * @attention
   *
