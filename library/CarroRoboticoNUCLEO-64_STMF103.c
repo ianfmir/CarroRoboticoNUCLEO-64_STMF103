@@ -2,7 +2,7 @@
  * CarroRoboticoNUCLEO-64_STMF103.c
  *
  *  Created on: 18 de jul de 2021
- *      Author: bruno
+ *      Authors: Bruno Guimarães Bitencourt and Ian Fernandes Miranda
  */
 
 #include "CarroRoboticoNUCLEO-64_STMF103.h"
