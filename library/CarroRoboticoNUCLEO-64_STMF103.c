@@ -38,10 +38,10 @@ void Parar(TIM_HandleTypeDef timer){
 
 
 void ViraEsquerda90(TIM_HandleTypeDef timer){
-	setPWM(timer, TIM_CHANNEL_1, 1023, 480); //MOTOR1 PRA FRENTE - direita
-	setPWM(timer, TIM_CHANNEL_2, 1023, 0); //MOTOR1 PRA TRAS
-	setPWM(timer, TIM_CHANNEL_3, 1023, 0); //MOTOR2 PRA FRENTE - esquerda
-	setPWM(timer, TIM_CHANNEL_4, 1023, 480); //MOTOR3 PRA TRAS
+	setPWM(timer, TIM_CHANNEL_1, 1023, 480); 
+	setPWM(timer, TIM_CHANNEL_2, 1023, 0);
+	setPWM(timer, TIM_CHANNEL_3, 1023, 0); 
+	setPWM(timer, TIM_CHANNEL_4, 1023, 480); 
 	HAL_Delay(350);
 
 }
@@ -49,19 +49,19 @@ void ViraEsquerda90(TIM_HandleTypeDef timer){
 
 
 void ViraDireita90(TIM_HandleTypeDef timer){
-	setPWM(timer, TIM_CHANNEL_1, 1023, 0); //MOTOR1 PRA FRENTE - direita
-	setPWM(timer, TIM_CHANNEL_2, 1023, 480); //MOTOR1 PRA TRAS
-	setPWM(timer, TIM_CHANNEL_3, 1023, 480); //MOTOR2 PRA FRENTE - esquerda
-	setPWM(timer, TIM_CHANNEL_4, 1023, 0); //MOTOR3 PRA TRAS
+	setPWM(timer, TIM_CHANNEL_1, 1023, 0); 
+	setPWM(timer, TIM_CHANNEL_2, 1023, 480); 
+	setPWM(timer, TIM_CHANNEL_3, 1023, 480); 
+	setPWM(timer, TIM_CHANNEL_4, 1023, 0); 
 	HAL_Delay(350);
 }
 
 
 void Gira180(TIM_HandleTypeDef timer){
-	setPWM(timer, TIM_CHANNEL_1, 1023, 480); //MOTOR1 PRA FRENTE - direita
-	setPWM(timer, TIM_CHANNEL_2, 1023, 0); //MOTOR1 PRA TRAS
-	setPWM(timer, TIM_CHANNEL_3, 1023, 0); //MOTOR2 PRA FRENTE - esquerda
-	setPWM(timer, TIM_CHANNEL_4, 1023, 480); //MOTOR3 PRA TRAS
+	setPWM(timer, TIM_CHANNEL_1, 1023, 480); 
+	setPWM(timer, TIM_CHANNEL_2, 1023, 0); 
+	setPWM(timer, TIM_CHANNEL_3, 1023, 0); 
+	setPWM(timer, TIM_CHANNEL_4, 1023, 480); 
 	HAL_Delay(1200);
 }
 
