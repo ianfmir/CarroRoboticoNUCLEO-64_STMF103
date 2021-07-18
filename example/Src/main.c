@@ -36,36 +36,36 @@ int main(void)
   MX_TIM2_Init();
   while (1)
   {
-	  AndaFrente(htim2);
+	  AndaFrente(htim2); 		//move forward for 3 seconds
 	  HAL_Delay(3000);
-	  Parar(htim2);
+	  Parar(htim2); 		//stop
 	  HAL_Delay(3000);
 
-	  ViraEsquerda90(htim2);
+	  ViraEsquerda90(htim2); 	//turn left 90 degrees
 	  Parar(htim2);
 	  HAL_Delay(1500);
 
-	  AndaRe(htim2);
+	  AndaRe(htim2); 		//move backwards for 3 seconds
 	  HAL_Delay(3000);
-	  Parar(htim2);
+	  Parar(htim2);			//stop
 	  HAL_Delay(3000);
 
-	  ViraDireita90(htim2);
+	  ViraDireita90(htim2);		//turn left 90 degrees
+	  Parar(htim2);			//stop
+	  HAL_Delay(1500);
+
+	  AndaRe(htim2);		//move backwards for 3 seconds
+	  HAL_Delay(3000);
+	  Parar(htim2);			//stop
+	  HAL_Delay(3000);
+
+	  ViraEsquerda90(htim2);	//turn left 90 degrees
 	  Parar(htim2);
 	  HAL_Delay(1500);
 
-	  AndaRe(htim2);
+	  AndaFrente(htim2);		//move forward for 3 seconds
 	  HAL_Delay(3000);
-	  Parar(htim2);
-	  HAL_Delay(3000);
-
-	  ViraEsquerda90(htim2);
-	  Parar(htim2);
-	  HAL_Delay(1500);
-
-	  AndaFrente(htim2);
-	  HAL_Delay(3000);
-	  Parar(htim2);
+	  Parar(htim2);			//stop
 	  HAL_Delay(3000);
   }
 }
