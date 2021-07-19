@@ -36,14 +36,14 @@
 #define CARROROBOTICONUCLEO_64_STMF103_H_
 #include "stm32f1xx_hal.h"
 
-void AndaFrente(TIM_HandleTypeDef timer);
-void AndaRe(TIM_HandleTypeDef timer);
-void Parar(TIM_HandleTypeDef timer);
-void ViraDireita90(TIM_HandleTypeDef timer);
-void ViraEsquerda90(TIM_HandleTypeDef timer);
-void Gira180(TIM_HandleTypeDef timer);
-void ViraEsquerdaSuave(TIM_HandleTypeDef timer);
-void ViraDireitaSuave(TIM_HandleTypeDef timer);
+void AndaFrente(TIM_HandleTypeDef timer);               //move forward
+void AndaRe(TIM_HandleTypeDef timer);                   //move backward
+void Parar(TIM_HandleTypeDef timer);                    //stop
+void ViraDireita90(TIM_HandleTypeDef timer);            //spin rigth 90 degrees
+void ViraEsquerda90(TIM_HandleTypeDef timer);           //spin left 90 degrees
+void Gira180(TIM_HandleTypeDef timer);                  //spin left 180 degrees
+void ViraEsquerdaSuave(TIM_HandleTypeDef timer);        //turn left
+void ViraDireitaSuave(TIM_HandleTypeDef timer);         //turn right
 
 
 
