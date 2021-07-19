@@ -21,6 +21,6 @@ void ViraDireitaSuave(TIM_HandleTypeDef timer);         //turn right
 
 ```
 
-**Attention**: This library was developed to control only the described DC motors. If your goal is to implement a full functional aoutonomous vehicle it's necessary to include the environment sensoring. When using a different board, it is mandatory to initialize the respective ports and pins for each device with the appropriate functions.
+**Attention**: This library was developed to control only the described DC motors. If your goal is to implement a full functional aoutonomous vehicle it's necessary to include the environment sensoring. When using a different board, it is mandatory to initialize the respective ports and pins for each device with the appropriate functions. It could be necessary to calibrate the functions parameters due to the different behavior of the motors used. 
 
 [brunogbitencourt@ufmg.br](mailto:brunogbitencourt@ufmg.br), [ianfm@ufmg.br](mailto:ianfm@ufmg.br)
