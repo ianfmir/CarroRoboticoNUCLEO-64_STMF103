@@ -11,17 +11,14 @@
 static void setPWM(TIM_HandleTypeDef, uint32_t, uint16_t, uint16_t);
 
 
-void AndaFrente(TIM_HandleTypeDef timer){
-
+void AndaFrente(TIM_HandleTypeDef timer){		//moves forward
 	setPWM(timer, TIM_CHANNEL_1, 1023, 512);
 	setPWM(timer, TIM_CHANNEL_2, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_3, 1023, 525);
 	setPWM(timer, TIM_CHANNEL_4, 1023, 0);
-
 }
 
-
-void AndaRe(TIM_HandleTypeDef timer){
+void AndaRe(TIM_HandleTypeDef timer){			//moves backwards
 	setPWM(timer, TIM_CHANNEL_1, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_2, 1023, 512);
 	setPWM(timer, TIM_CHANNEL_3, 1023, 0);
@@ -29,26 +26,22 @@ void AndaRe(TIM_HandleTypeDef timer){
 
 }
 
-void Parar(TIM_HandleTypeDef timer){
+void Parar(TIM_HandleTypeDef timer){			//stop
 	setPWM(timer, TIM_CHANNEL_1, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_2, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_3, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_4, 1023, 0);
 }
 
-
-void ViraEsquerda90(TIM_HandleTypeDef timer){
+void ViraEsquerda90(TIM_HandleTypeDef timer){		//spin left 90 degrees
 	setPWM(timer, TIM_CHANNEL_1, 1023, 480); 
 	setPWM(timer, TIM_CHANNEL_2, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_3, 1023, 0); 
-	setPWM(timer, TIM_CHANNEL_4, 1023, 480);
+	setPWM(timer, TIM_CHANNEL_4, 1023, 480); 
 	HAL_Delay(350);
-
 }
 
-
-
-void ViraDireita90(TIM_HandleTypeDef timer){
+void ViraDireita90(TIM_HandleTypeDef timer){		//spin rigth 90 degrees
 	setPWM(timer, TIM_CHANNEL_1, 1023, 0); 
 	setPWM(timer, TIM_CHANNEL_2, 1023, 480); 
 	setPWM(timer, TIM_CHANNEL_3, 1023, 480); 
@@ -56,8 +49,7 @@ void ViraDireita90(TIM_HandleTypeDef timer){
 	HAL_Delay(350);
 }
 
-
-void Gira180(TIM_HandleTypeDef timer){
+void Gira180(TIM_HandleTypeDef timer){			//spin left 180 degress
 	setPWM(timer, TIM_CHANNEL_1, 1023, 480); 
 	setPWM(timer, TIM_CHANNEL_2, 1023, 0); 
 	setPWM(timer, TIM_CHANNEL_3, 1023, 0); 
@@ -65,8 +57,7 @@ void Gira180(TIM_HandleTypeDef timer){
 	HAL_Delay(1200);
 }
 
-
-void ViraEsquerdaSuave(TIM_HandleTypeDef timer){
+void ViraEsquerdaSuave(TIM_HandleTypeDef timer){ 	//turn left
 	setPWM(timer, TIM_CHANNEL_1, 1023, 480);
 	setPWM(timer, TIM_CHANNEL_2, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_3, 1023, 350);
@@ -74,17 +65,13 @@ void ViraEsquerdaSuave(TIM_HandleTypeDef timer){
 	HAL_Delay(350);
 }
 
-
-
-void ViraDireitaSuave(TIM_HandleTypeDef timer){
+void ViraDireitaSuave(TIM_HandleTypeDef timer){		//turn right
 	setPWM(timer, TIM_CHANNEL_1, 1023, 350);
 	setPWM(timer, TIM_CHANNEL_2, 1023, 0);
 	setPWM(timer, TIM_CHANNEL_3, 1023, 480);
 	setPWM(timer, TIM_CHANNEL_4, 1023, 0);
 	HAL_Delay(350);
 }
-
-
 
 void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period, uint16_t pulse){
 	 HAL_TIM_PWM_Stop(&timer, channel); // stop generation of pwm
@@ -98,7 +85,3 @@ void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period, uint16_t
 	 HAL_TIM_PWM_ConfigChannel(&timer, &sConfigOC, channel);
 	 HAL_TIM_PWM_Start(&timer, channel); // start pwm generation
 }
-
-
-
-
