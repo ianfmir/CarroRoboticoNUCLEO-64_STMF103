@@ -6,7 +6,7 @@ This API was developed in July 2021 by Bruno Guimarães Bitencourt and Ian Ferna
 
 The developed library is located inside the folder entitled as "library". Inside the folder entitled "example" there's an example code that uses the functions implemented on the library to make a two wheeled vehicle perform a squared path on the ground. 
 
-The functions implemented in the library allows the vehicle to perform the following movements: 
+The functions implemented in the library allows the vehicle to perform the following commands: 
 
 ```C
 
