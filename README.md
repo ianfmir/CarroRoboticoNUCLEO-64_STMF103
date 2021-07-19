@@ -8,6 +8,8 @@ The developed library is located inside the folder entitled as "library". Inside
 
 The functions implemented in the library allows the vehicle to perform the following movements: 
 
+```C
+
 void AndaFrente(TIM_HandleTypeDef timer);               //move forward
 void AndaRe(TIM_HandleTypeDef timer);                   //move backward
 void Parar(TIM_HandleTypeDef timer);                    //stop
@@ -16,6 +18,8 @@ void ViraEsquerda90(TIM_HandleTypeDef timer);           //spin left 90 degrees
 void Gira180(TIM_HandleTypeDef timer);                  //spin left 180 degrees
 void ViraEsquerdaSuave(TIM_HandleTypeDef timer);        //turn left
 void ViraDireitaSuave(TIM_HandleTypeDef timer);         //turn right
+
+```
 
 **Attention**: This library was developed to control only the described DC motors. If your goal is to implement a full functional aoutonomous vehicle it's necessary to include the environment sensoring. When using a different board, it is mandatory to initialize the respective ports and pins for each device with the appropriate functions.
 
